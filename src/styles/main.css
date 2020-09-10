@@ -1,6 +1,6 @@
 /* Settings – used with preprocessors and contain font, colors definitions, etc. */
 @import 'settings/fonts.css';
-@import 'settings/colors.css';
+@import 'settings/settings.css';
 
 /* Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers. */
 
@@ -18,8 +18,15 @@
 @import 'elements/body.css';
 
 /* Objects – class-based selectors which define undecorated design patterns, for example media object known from OOCSS */
+@import 'objects/grid.css';
+@import 'objects/button.css';
+@import 'objects/select.css';
+@import 'objects/arrow.css';
+@import 'objects/line-text.css';
+@import 'objects/headings.css';
 
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
+@import 'generic/homepage.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';
