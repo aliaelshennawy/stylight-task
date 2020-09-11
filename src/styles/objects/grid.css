@@ -1,17 +1,10 @@
 .container {
-	max-width: 1400px;
+	max-width: 1200px;
 	margin-inline: auto;
-	padding-inline: 80px;
-	@media (max-width: 1024px) {
-		padding-inline: 20px;
-	}
+	width: 100%;
+	padding-inline: 15px;
 	&--narrow {
-		max-width: 1000px;
-		padding-inline: 0;
-		@media (max-width: 1024px) {
-			max-width: none;
-			padding: 0 20px;
-		}
+		max-width: 900px;
 	}
 }
 .cols {
@@ -29,6 +22,12 @@
 		margin-inline: 0;
 		& > .col {
 			padding-inline: 0;
+		}
+	}
+	&--narrow {
+		margin-inline: -3px;
+		& > .col {
+			padding-inline: 3px;
 		}
 	}
 	@media (min-width: 768px) {
@@ -51,6 +50,11 @@
 	&.vertically-center {
 		align-items: center;
 	}
+	& > .vertically-bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
 	@media (min-width: 768px) {
 		&--2 {
 			& > .col {
@@ -67,7 +71,21 @@
 				width: 25%;
 			}
 		}
+		&--5 {
+			& > .col {
+				width: 20%;
+			}
+		}
 		&--2 > .col:nth-child(odd) {
+			clear: inline-start;
+		}
+		&--3 > .col:nth-child(3n + 1) {
+			clear: inline-start;
+		}
+		&--4 > .col:nth-child(4n + 1) {
+			clear: inline-start;
+		}
+		&--5 > .col:nth-child(5n + 1) {
 			clear: inline-start;
 		}
 		& > .col.col {

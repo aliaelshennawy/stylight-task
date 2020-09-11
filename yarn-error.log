@@ -1,0 +1,96 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/aliaelshennawy/.rvm/gems/ruby-2.3.0/bin:/Users/aliaelshennawy/.rvm/gems/ruby-2.3.0@global/bin:/Users/aliaelshennawy/.rvm/rubies/ruby-2.3.0/bin:/usr/local/php5//bin:/Users/aliaelshennawy/miniconda2/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/aliaelshennawy/.rvm/gems/ruby-2.3.0/bin:/Users/aliaelshennawy/.rvm/gems/ruby-2.3.0@global/bin:/Users/aliaelshennawy/.rvm/rubies/ruby-2.3.0/bin:/usr/local/php5//bin:/Users/aliaelshennawy/miniconda2/bin:/usr/local/mysql/bin:/Users/aliaelshennawy/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.16.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+  	"private": true,
+  	"engines": {
+  		"node": ">=12"
+  	},
+  	"scripts": {
+  		"prepare": "snowpack --stat",
+  		"snowpack": "snowpack",
+  		"test": "jest --config jest.config.js --verbose",
+  		"dev": "node ./scripts/task-runner/tasks.js serve",
+  		"build": "node ./scripts/task-runner/tasks.js build",
+  		"build:clean": "node ./scripts/task-runner/tasks.js build:clean",
+  		"runner": "node ./scripts/task-runner/tasks.js"
+  	},
+  	"devDependencies": {
+  		"@babel/core": "^7.9.6",
+  		"@commitlint/cli": "^8.3.5",
+  		"@commitlint/config-conventional": "^8.3.4",
+  		"babel-jest": "^26.0.0",
+  		"babel-minify": "^0.5.1",
+  		"browser-sync": "^2.26.7",
+  		"chalk": "^4.0.0",
+  		"chokidar": "^3.4.0",
+  		"core-js": "^3.6.5",
+  		"cssnano": "^4.1.10",
+  		"eslint": "^6.8.0",
+  		"eslint-config-prettier": "^6.11.0",
+  		"eslint-plugin-prettier": "^3.1.3",
+  		"husky": "^4.2.5",
+  		"imagemin-lint-staged": "^0.4.0",
+  		"jest": "^26.0.0",
+  		"lint-staged": "^10.2.2",
+  		"ncp": "^2.0.0",
+  		"postcss": "^7.0.29",
+  		"postcss-dir-pseudo-class": "^5.0.0",
+  		"postcss-easy-import": "^3.0.0",
+  		"postcss-import": "^12.0.1",
+  		"postcss-load-config": "^2.1.0",
+  		"postcss-logical": "^4.0.2",
+  		"postcss-nested": "^4.2.1",
+  		"postcss-preset-env": "^6.7.0",
+  		"postcss-reporter": "^6.0.1",
+  		"postcss-retina-bg-img": "^4.1.0",
+  		"prettier": "^2.0.5",
+  		"pug": "^2.0.4",
+  		"rimraf": "^3.0.2",
+  		"snowpack": "^1.7.1",
+  		"stylelint": "^13.3.3",
+  		"stylelint-config-prettier": "^8.0.1",
+  		"stylelint-config-recommended": "^3.0.0",
+  		"stylelint-prettier": "^1.1.2",
+  		"svg-sprite": "^1.5.0",
+  		"uglify-es": "^3.3.9"
+  	},
+  	"config": {
+  		"commitizen": {
+  			"path": "cz-conventional-changelog"
+  		}
+  	},
+  	"dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at Object.checkOne (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:62444:11)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:22773:75
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:23451:28)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:95:12
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:22777:27

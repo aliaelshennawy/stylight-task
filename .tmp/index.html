@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- TODO add a title here-->
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO add a favicon-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="theme-color" content="#ff5859">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <!--[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" upgrade your browser to improve your experience.</p>-->
+    <div>Stylight Currency Converter
+      <form action="./">
+        <p>Amount:</p>
+        <input type="text" id="amount" placeholder="Please Enter Conversion Amount">
+        <p>Source currency:</p>
+        <select name="currency" id="currency-select-from">
+          <option value="EUR" selected>Eur</option>
+        </select>
+        <p>Target currency:</p>
+        <select name="currency" id="currency-select-to">
+          <option value="EUR">Eur</option>
+          <option value="USD">Usd </option>
+          <option value="JPY">Japanese Yen</option>
+        </select>
+        <p id="result">Result:</p>
+      </form>
+    </div>
+    <footer>
+      <div class="container"></div>
+    </footer>
+    <script type="module" src="scripts/main.js"></script>
+    <script nomodule src="scripts/app.nomodule.js"></script>
+  </body>
+</html>

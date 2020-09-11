@@ -1,1 +1,13 @@
-include components/index
+div Stylight Currency Converter
+  form(action='./')
+    p Amount:
+    input(type='text' id="amount" placeholder="Please Enter Conversion Amount")
+    p Source currency:
+    select(name="currency" id="currency-select-from")
+      option(value="EUR" selected) Eur
+    p Target currency:
+    select(name="currency" id="currency-select-to")
+      option(value="EUR") Eur
+      option(value="USD") Usd 
+      option(value="JPY") Japanese Yen
+    p(id="result") Result:

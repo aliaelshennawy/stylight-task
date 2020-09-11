@@ -1,21 +1,4 @@
 a {
 	text-decoration: none;
-	color: inherit;
-	&:hover {
-		text-decoration-line: underline;
-	}
-	&.has-arrow {
-		&:after {
-			content: '';
-			display: inline-block;
-			border: solid;
-			margin-inline-start: 5px;
-			border-width: 0 2px 2px 0;
-			transform: rotate(135deg);
-			padding: 3px;
-		}
-		&--dark:after {
-			border-color: var(--color-secondary);
-		}
-	}
+	color: var(--primary-color);
 }
