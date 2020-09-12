@@ -4,6 +4,7 @@ class App {
 
 	constructor() {
 		this.listenToDocumentChange();
+		this.appendHistory();
 	}
 	listenToDocumentChange() {
 		document.addEventListener('change', evt => {
@@ -21,13 +22,27 @@ class App {
 				rate = (response.data.rates[to] * amount);
 				console.log(rate);
 				document.getElementById('result').innerHTML = rate;
-				return rate;
+				window.localStorage.setItem(`Conversion with amount ${amount} from EUR to ${to}`,rate);
       })
       .catch(function(error) {
         // handle error
         console.log(error);
       });
 	}	
+	appendHistory(){
+		var list = document.querySelector('#history');
+		var fragment = new DocumentFragment();
+		for (var i = 0; i < localStorage.length; i++){
+			var li = document.createElement('li')
+			var span = document.createElement('li');
+			var key = localStorage.key(i);
+			li.innerHTML = key;
+			span.innerHTML =  localStorage[key];
+			fragment.appendChild(li);
+			fragment.appendChild(span);
+		}
+		list.appendChild(fragment);
+	}
 }
 
 new App();

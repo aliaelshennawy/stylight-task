@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js install
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js add @fortawesome/fontawesome-free
 
 PATH: 
   /Users/aliaelshennawy/.rvm/gems/ruby-2.3.0/bin:/Users/aliaelshennawy/.rvm/gems/ruby-2.3.0@global/bin:/Users/aliaelshennawy/.rvm/rubies/ruby-2.3.0/bin:/usr/local/php5//bin:/Users/aliaelshennawy/miniconda2/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/aliaelshennawy/.rvm/gems/ruby-2.3.0/bin:/Users/aliaelshennawy/.rvm/gems/ruby-2.3.0@global/bin:/Users/aliaelshennawy/.rvm/rubies/ruby-2.3.0/bin:/usr/local/php5//bin:/Users/aliaelshennawy/miniconda2/bin:/usr/local/mysql/bin:/Users/aliaelshennawy/.rvm/bin
@@ -73,7 +73,9 @@ npm manifest:
   			"path": "cz-conventional-changelog"
   		}
   	},
-  	"dependencies": {}
+  	"dependencies": {
+  		"axios": "^0.20.0"
+  	}
   }
 
 yarn manifest: 

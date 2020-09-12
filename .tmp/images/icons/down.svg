@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="5px" viewBox="0 0 9 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Icon/arrow/down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="text-feild" transform="translate(-202.000000, -37.000000)" fill="#384955">
+            <g id="Icon/arrow/down" transform="translate(202.000000, 37.000000)">
+                <path d="M0.946526343,0.14613219 L4.49491152,3.61653043 L8.06290103,0.14613219 C8.53340515,-0.322840545 9.337183,0.446274741 8.84707455,0.915247476 L4.82818527,4.87337736 C4.65174622,5.04220755 4.35768115,5.04220755 4.20084645,4.87337736 L0.142748485,0.915247476 C-0.327755627,0.446274741 0.476022231,-0.322840545 0.946526343,0.14613219 Z" id="Path" transform="translate(4.500000, 2.500000) rotate(-360.000000) translate(-4.500000, -2.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

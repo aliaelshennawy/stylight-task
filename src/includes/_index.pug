@@ -1,13 +1,23 @@
-div Stylight Currency Converter
-  form(action='./')
-    p Amount:
-    input(type='text' id="amount" placeholder="Please Enter Conversion Amount")
-    p Source currency:
-    select(name="currency" id="currency-select-from")
-      option(value="EUR" selected) Eur
-    p Target currency:
-    select(name="currency" id="currency-select-to")
-      option(value="EUR") Eur
-      option(value="USD") Usd 
-      option(value="JPY") Japanese Yen
-    p(id="result") Result:
+div.container.converter-wrapper 
+  h1 Stylight Currency Converter
+  div.form-wrapper
+    form(action='./')
+      .cols.cols--2
+        .col
+          p Source currency:
+          .styled-select
+            select(name="currency" id="currency-select-from")
+              option(value="EUR" selected) &euro; Eur
+          p Amount:
+          input(type='text' id="amount" placeholder="Please Enter Conversion Amount")
+        .col
+          p Target currency:
+          .styled-select
+            select(name="currency" id="currency-select-to")
+              option(value="EUR") &euro; Eur
+              option(value="USD") &#36; Usd 
+              option(value="JPY") &#165; Japanese Yen
+          p Result:
+            span.result(id="result")
+  h2 Conversion History
+  ul.list.old-conversions(id="history")
